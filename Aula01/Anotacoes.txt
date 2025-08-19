@@ -1,0 +1,34 @@
+- Instalar node
+- verificar instalação
+    node -v
+    npm -v
+
+NPM - NODE PACKAGE MANAGER
+     
+    npm init        inicializar o projeto
+    npm init --yes / -y
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js"
+  },
+
+  executar:
+    npm run dev
+
+
+INSTALAR DEPENDENCIA
+    npm i NOME_DEPENDENCIA
+
+    npm i express
+
+NO PACKAGE.JSON
+    "type": "module",
+
+    EXISTEM 2 TIPOS DE PROJETO EM NODEJS
+        COMMONJS (CJS)  const biblioteca = require('biblioteca')
+        MODULE (ESM)    import biblioteca from 'biblioteca'
+
+
+PESQUISAR SOBRE
+    versionamento semantico
