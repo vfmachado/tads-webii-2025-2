@@ -1,0 +1,25 @@
+<%- include('includes/head') %>
+<body>
+    <%- include('includes/navbar') %>
+
+    <h1>Pagina de produtos</h1>
+    
+    <ul>
+        <% for (let i = 0; i < lista.length; i++) { %>
+            <a href="/products/<%= lista[i].id %>">
+                <li><%= lista[i].name %></li>
+            </a>
+        <% } %>
+    </ul>
+
+    <hr>
+
+    <ul>
+        <% lista.forEach(item => { %>
+            <li><%= item.name %></li>
+        <% }) %>
+    </ul>
+
+
+</body>
+</html>
