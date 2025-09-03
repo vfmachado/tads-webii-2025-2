@@ -8,3 +8,7 @@ export function mostraListaUsuarios(req, res) {
     // res.render('users-lista', { dados: dados })
 }
 
+export function mostraPaginaCriacaoUsuario(req, res) {
+    res.render('users-create');
+}
+

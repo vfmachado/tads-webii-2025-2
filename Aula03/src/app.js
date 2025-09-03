@@ -4,6 +4,9 @@ import { usersRouter } from './routes/users-routes.js';
 // idealmente, temos apenas configurações aqui no app.js
 const app = express();
 
+//MIDDLEWARE QUE FAZ O PARSER DAS REQUISICOES FEITAS ATRAVES DE FORMULARIOS HTML E INJETA O PAYLOAD NO REQUEST.BODY
+app.use(express.urlencoded({ extended: false}));
+
 app.set("view engine", "ejs");
 app.set("views", "./src/views");
 
